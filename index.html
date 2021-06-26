@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,500&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="/assets/styles.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <nav class="head_nav">
+        <img src="/assets/img/menu.svg" id="menu">
+
+        <div class="thin_wrapper">
+            <a href="#info">Личная информация</a>
+            <a href="#exp">Опыт</a>
+            <a href="#js">Javascript</a>
+            <a href="#about">О себе</a>
+        </div>
+    </nav>
+    <div id="mob_wrapper">
+        <a href="#info">Личная информация</a>
+        <a href="#exp">Опыт</a>
+        <a href="#js">Javascript</a>
+        <a href="#about">О себе</a>
+    </div>
+    <div class="main">
+        <div class="main_wrapper">
+            <h1>Анкета</h1>
+            <img class="sect_icon" src="/assets/img/icon.svg">
+            <h2 id="info">Личная информация</h2>
+            <form class="anket_form">
+                <input type="text" placeholder="Shandalinov Yernar">
+                <input type="number" min="1900" max="2099" step="1" value="1998" placeholder="1998" id="input_year" />
+                <input type="text" placeholder="Almaty">
+                <input type="text" placeholder="none">
+                <input type="email" placeholder="ernar98s@mail.ru">
+            </form>
+            <img class="sect_icon" src="/assets/img/checklist.svg">
+            <h2 id="exp">Расскажите о своем опыте</h2>
+            <div class="exp_wrapper">
+                <form action="">
+                    <div class="column">
+                        <div>
+                            <input type="checkbox" id="subscribeNews" checked>
+                            <label for="subscribeNews">BAM?</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" id="subscribeNews">
+                            <label for="subscribeNews">SASS?</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" id="subscribeNews">
+                            <label for="subscribeNews">SVG?</label>
+                        </div>
+                    </div>
+                    <div class="column">
+                        <div>
+                            <input type="checkbox" id="subscribeNews">
+                            <label for="subscribeNews">Semantic?</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" id="subscribeNews" checked>
+                            <label for="subscribeNews">ES6?</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" id="subscribeNews">
+                            <label for="subscribeNews">GULP?</label>
+                        </div>
+                    </div>
+                    <div class="column">
+                        <div>
+                            <input type="checkbox" id="subscribeNews" checked>
+                            <label for="subscribeNews">WEBPACK?</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" id="subscribeNews" checked>
+                            <label for="subscribeNews">JQUERY?</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" id="subscribeNews" checked>
+                            <label for="subscribeNews">GIT?</label>
+                        </div>
+                    </div>
+                </form>
+            </div>
+
+            <!-- jS SLIDER INPUT -->
+
+            <img class="sect_icon" src="/assets/img/js.svg">
+            <h2 id="js">Уровень Js</h2>
+            <div class="slider">
+                <input id="volume" type="range" min="0" max="100" step="1" />
+                <span style="text-align: center;display: block;">( Пока не придумал как повышать градиент :| )</span>
+            </div>
+
+            <img class="sect_icon" src="/assets/img/icon.svg">
+            <h2 id="about">Расскажите о себе</h2>
+            <p class="about_sub">Напишите несколько предложений, чем привлекла наша вакансия<br>
+                и что вы ожидаете от работы у нас.
+            </p>
+            <textarea class="about_text" id="" cols="30" rows="10"
+                placeholder="Хотел найти удаленку, потому что сейчас хочу переехать в другой город"></textarea>
+
+
+            <button class="final_submit">Готово</button>
+        </div>
+    </div>
+    <script src="/assets/main.js"></script>
+</body>
+
+</html>
